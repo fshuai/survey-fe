@@ -21,7 +21,13 @@
       <div style="margin-top: 15px">
         <el-form :inline="true" size="small" label-width="140px">
           <el-form-item label="搜索姓名：">
-            <el-input style="width: 203px" v-model="searchName" placeholder="姓名" maxlength="10" show-word-limit></el-input>
+            <el-input
+              style="width: 203px"
+              v-model="searchName"
+              placeholder="姓名"
+              maxlength="10"
+              @keyup.enter.native="search"
+              show-word-limit></el-input>
           </el-form-item>
         </el-form>
       </div>

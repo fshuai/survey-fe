@@ -8,7 +8,7 @@
                label-position="left">
         <div style="text-align: center">
         </div>
-        <h2 class="login-title color-main">survey-admin</h2>
+        <h2 class="login-title">survey-admin</h2>
         <el-form-item prop="username">
           <el-input name="username"
                     type="text"
@@ -32,7 +32,7 @@
           <el-button style="width: 45%" type="primary" :loading="loading" @click.native.prevent="handleLogin">
             登录
           </el-button>
-          <el-button style="width: 45%" type="primary" @click.native.prevent="handleTry">
+          <el-button style="width: 45%" type="primary" @click.native.prevent="handleRegister">
             注册
           </el-button>
         </el-form-item>
@@ -100,7 +100,7 @@ export default {
         }
       }
     },
-    handleTry () {
+    handleRegister () {
       this.$message('注册功能暂未开放')
     }
   }
